@@ -419,7 +419,6 @@ class FaceArray extends PixelArrayGroup {
    isFree(handle) {
       return (this._numberOfSide.get(handle, 0) < 3);
    }
-
    
    *[Symbol.iterator] () {
       yield* this.rangeIter(0, this.length());
